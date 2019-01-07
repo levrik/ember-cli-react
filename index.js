@@ -12,8 +12,8 @@ module.exports = {
         transform: { es6module: true },
         babelOptions: {
           plugins: [
-            'transform-object-rest-spread',
-            'transform-class-properties',
+            '@babel/plugin-proposal-class-properties',
+            '@babel/plugin-proposal-object-rest-spread',
           ],
         },
       });

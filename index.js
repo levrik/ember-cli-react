@@ -12,9 +12,12 @@ module.exports = {
         transform: { es6module: true },
         babelOptions: {
           plugins: [
-            '@babel/plugin-proposal-class-properties',
-            '@babel/plugin-proposal-object-rest-spread',
             'babel-plugin-macros',
+            ['@babel/plugin-proposal-class-properties', { loose: true }],
+            [
+              '@babel/plugin-proposal-object-rest-spread',
+              { useBuiltIns: true },
+            ],
           ],
         },
       });
